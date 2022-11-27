@@ -15,70 +15,70 @@
 </head>
 
 <body>
-  <div class="container m-3 d-flex gap-3">
-    <div class="div">
-      <form class="form-control" action="" id="form">
-        <h2 class="text-center mb-2">Pizza order</h2>
-        <input type="text" id="name" class="form-control mb-3" placeholder="User name">
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1">+998</span>
-          <input type="number" class="form-control" id="Pnum" placeholder="Phone number" aria-label="Phone number"
-            aria-describedby="basic-addon1">
+  <div class="container d-flex">
+    <form class="form-control div m-2" action="" id="form">
+      <h2 class="text-center mb-2">Pizza order</h2>
+      <input type="text" id="name" class="form-control mb-3" placeholder="User name">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">+998</span>
+        <input type="number" class="form-control" id="Pnum" placeholder="Phone number" aria-label="Phone number"
+          aria-describedby="basic-addon1">
+      </div>
+      <input type="text" id="address" class="form-control mb-3" placeholder="User address">
+      <div class="d-flex justify-content-between gap-2 mb-3">
+        <strong class="m-2 w-100">Dough thickness:</strong>
+        <select class="form-select w-50 m-1" id="Pwidth" aria-label="Default select example">
+          <option value="Thin" selected>Thin</option>
+          <option value="Medium">Medium</option>
+          <option value="Thick">Thick</option>
+        </select>
+      </div>
+      <div class="d-flex justify-content-between gap-2 mb-3">
+        <strong class="m-2">Size :</strong>
+        <div class="btn-group gap-2" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check size" value="25" name="btnradio" id="btnradio1" autocomplete="off"
+            checked>
+          <label class="btn btn-outline-primary br" for="btnradio1">25 sm</label>
+          <input type="radio" class="btn-check size" value="30" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary br" for="btnradio2">30 sm</label>
+          <input type="radio" class="btn-check size" value="35" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary br" for="btnradio3">35 sm</label>
         </div>
-        <input type="text" id="address" class="form-control mb-3" placeholder="User address">
-        <div class="d-flex justify-content-between gap-2 mb-3">
-          <strong class="m-2 w-100">Dough thickness:</strong>
-          <select class="form-select w-50 m-1" id="Pwidth" aria-label="Default select example">
-            <option value="Thin" selected>Thin</option>
-            <option value="Medium">Medium</option>
-            <option value="Thick">Thick</option>
-          </select>
+      </div>
+      <div>
+        <strong class="text-start">On Pizza :</strong>
+        <div class="form-check">
+          <ul class="m-2 d-flex justify-content-between flex-wrap">
+            <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients" value="Tomato"
+                  type="checkbox">Tomato</label></li>
+            <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients"
+                  value="Turkey meat" type="checkbox">Turkey meat</label></li>
+            <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients" value="Olive"
+                  type="checkbox">Olive</label></li>
+            <li class="m-1 "><label class="form-check-label"><input class="form-check-input ingredients"
+                  value="Pickled Cucumber" type="checkbox">Pickled Cucumber</label></li>
+            <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients" value="Mushroom"
+                  type="checkbox">Mushroom</label></li>
+            <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients"
+                  value="Horse meat" type="checkbox">Horse meat</label></li>
+          </ul>
         </div>
-        <div class="d-flex justify-content-between gap-2 mb-3">
-          <strong class="m-2">Size :</strong>
-          <div class="btn-group gap-2" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check size" value="25" name="btnradio" id="btnradio1" autocomplete="off"
-              checked>
-            <label class="btn btn-outline-primary br" for="btnradio1">25 sm</label>
-            <input type="radio" class="btn-check size" value="30" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary br" for="btnradio2">30 sm</label>
-            <input type="radio" class="btn-check size" value="35" name="btnradio" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-primary br" for="btnradio3">35 sm</label>
-          </div>
-        </div>
-        <div>
-
-          <strong class="text-start">On Pizza :</strong>
-          <div class="form-check">
-            <ul class="m-2 d-flex justify-content-between flex-wrap">
-              <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients" value="Tomato"
-                    type="checkbox">Tomato</label></li>
-              <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients"
-                    value="Turkey meat" type="checkbox">Turkey meat</label></li>
-              <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients" value="Olive"
-                    type="checkbox">Olive</label></li>
-              <li class="m-1 "><label class="form-check-label"><input class="form-check-input ingredients"
-                    value="Pickled Cucumber" type="checkbox">Pickled Cucumber</label></li>
-              <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients"
-                    value="Mushroom" type="checkbox">Mushroom</label></li>
-              <li class="m-1"><label class="form-check-label"><input class="form-check-input ingredients"
-                    value="Horse meat" type="checkbox">Horse meat</label></li>
-            </ul>
-          </div>
-        </div>
-        <div class="">
-          <strong class="d-inline-block text-start ms-2">Add :</strong>
-          <div class="d-flex justify-content-around align-items-center">
-            <label class="form-check-label"><input class="form-check-input add" value="Papper" type="checkbox">Papper</label>
-            <label class="form-check-label"><input class="form-check-input add" value="Sausage" type="checkbox">Sausage</label>
+      </div>
+      <div class="">
+        <strong class="d-inline-block text-start ms-2">Add :</strong>
+        <div class="d-flex justify-content-around align-items-center">
+          <label class="form-check-label"><input class="form-check-input add" value="Papper"
+              type="checkbox">Papper</label>
+          <label class="form-check-label"><input class="form-check-input add" value="Sausage"
+              type="checkbox">Sausage</label>
         </div>
         <div class="d-flex justify-content-center mt-2 mb-3 gap-2">
           <button type="submit" class="w-25 btn btn-success text-center">Save</button>
           <button type="reset" class="btn btn-warning">Clear</button>
         </div>
-      </form>
-    </div>
-    <div id="content" class="d-flex align-items-center flex-wrap"></div>
+      </div>
+    </form>
+    <div id="content" class="d-flex flex-wrap "></div>
   </div>
   <script src="js/main.js"></script>
 </body>

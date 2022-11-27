@@ -24,8 +24,8 @@ const formHandler = (e) => {
     id: Math.random().toFixed(2),
   };
   if (Uname.value == '') alert("Please enter a name");
-  if (Pnum.value == '') alert("Please enter a name");
-  if (address.value == '') alert("Please enter a name");
+  else if (Pnum.value == '') alert("Please enter a Phone number");
+  else if (address.value == '') alert("Please enter a address");
   else {
     orders.push(order);
   }
